@@ -169,3 +169,77 @@ main {
 .hidden {
   display: none;
 }
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 500px;
+  padding: 1.5rem;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255);
+}
+
+#popup h3 {
+  font-size: 2.4rem;
+  color: #c7365f;
+  margin-bottom: 0.5rem;
+}
+
+#popup p {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #333;
+}
+
+#popup button {
+  padding: 0.8rem 2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #c7365f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#popup button:hover {
+  background-color: #a32c4f;
+}
+
+#popup span {
+  font-size: 1.4rem;
+  text-align: center;
+  opacity: 0.6;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+#popup::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.rules-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #c7365f;
+  border: none;
+  border-radius: 50rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  position: fixed;
+  top: 5%;
+  right: 1%;
+  max-width: fit-content;
+  z-index: 1000;
+}

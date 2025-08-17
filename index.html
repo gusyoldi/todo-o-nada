@@ -5,9 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Pig Game</title>
+    <title>Todo o Nada</title>
   </head>
   <body>
+    <button popovertarget="popup" class="rules-btn">Cómo se juega?</button>
+
+    <div id="popup" popover class="popover">
+      <h3>Bienvenidxs a Todo o Nada!</h3>
+      <p>
+        "Todo o Nada" es un simple juego de azar de dos jugadores donde el
+        objetivo es llegar a 30 antes que tu contrincante.
+      </p>
+      <p>
+        Está dividido por turnos (Arranca el jugador 1), donde en cada turno el
+        jugador debe tirar los dados y guardar la mayor cantidad de puntos.
+      </p>
+      <p>
+        Si el jugador saca un 1, pierde los puntos que no hayan sido guardados y
+        es el turno del contrincante.
+      </p>
+      <p>Así que cuidado, que no te gane la avaricia…</p>
+      <span>
+        Éste juego fue pensado para poner a prueba mis habilidades con
+        JavaScript del lado del frontend, espero que les guste!
+      </span>
+      <button popovertarget="popup" popovertargetaction="hide">Cerrar</button>
+    </div>
+
     <main>
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Jugador 1</h2>
