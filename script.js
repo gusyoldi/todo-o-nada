@@ -1,5 +1,7 @@
 'use strict';
 
+import setInitialPlayerNames from './features/playerName';
+
 //Selecting elements
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
@@ -12,6 +14,7 @@ const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
+const btnChangeName = document.querySelector('.btn--changeName');
 
 //Starting conditions
 let scores, currentScore, activePlayer, playing;
@@ -32,6 +35,8 @@ const init = () => {
   player1El.classList.remove('player--winner');
   player0El.classList.add('player--active');
   player1El.classList.remove('player--active');
+
+  setInitialPlayerNames();
 };
 init();
 
@@ -92,4 +97,8 @@ btnHold.addEventListener('click', () => {
 
 btnNew.addEventListener('click', () => {
   init();
+});
+
+btnChangeName.addEventListener('click', () => {
+  promptPlayerNames();
 });
